@@ -1,0 +1,73 @@
+.card-are-we{
+    margin-top: 6rem;
+}
+.text-intro{
+    width: 85%;
+}
+.text-intro-user{
+    text-align: center;
+    font-size: 48px;
+    font-family: Sora;
+    color: white;
+    line-height: 60px;
+}
+
+.card-img-persp,.card-img-persp img{
+    width: 100%;
+    height: 100%;
+}
+.personnat-card{
+    margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+    .card-are-we{
+        margin-top: 3rem;
+    }
+    .text-intro-user{
+        text-align: center;
+        font-size: 26px;
+        font-family: Sora;
+        color: white;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-intro{
+        width: 95%;
+    }
+    .text-intro-user{
+        text-align: center;
+        font-size: 42px;
+        font-family: Sora;
+        line-height: 60px;
+        color: white;
+    }
+}
+
+@media (min-width: 1025px)and (max-width: 1550px)  {
+    .text-intro{
+        width: 90%;
+    }
+    .text-intro-user{
+        text-align: center;
+        font-size: 42px;
+        font-family: Sora;
+        line-height: 60px;
+        color: white;
+    }
+}
+
+@media (min-width: 1550px)  {
+  .card-text{
+      background: url('../../../public/images/1.svg');
+      width: 100%;
+      height:410px;
+      background-size: 100% 100%;
+      position: relative;
+  }
+  .text-intro{
+    width: 85%;
+}
+}
