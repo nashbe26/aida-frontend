@@ -55,7 +55,7 @@
       .pos-under-text-footer{
         position: absolute;
         bottom: 40%;
-        right: 0%;
+        right: 10px;
       }
       
   }

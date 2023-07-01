@@ -12,8 +12,8 @@ const IntroSection = () =>{
                 <div className="box-text-title">
                     <div style={{position:"relative"}}>
                         {isTabletOrMobile ?
-                        <><p className="main-text">Discover exceptional talent with  our A.I powered search engine</p>
-                        <p className="sec-text mt-4">Aida curates a personalised selection of incredible models from a simple text description 
+                        <><p className="main-text  mb-4" >Discover exceptional talent with  our A.I powered search engine</p>
+                        <p className="sec-text mt-5">Aida curates a personalised selection of incredible models from a simple text description 
 or reference image. Empowering you to find the perfect talent for your project</p></>
                         : 
                         <><p className="main-text">Discover exceptional talent with <br/> our A.I powered search engine</p>

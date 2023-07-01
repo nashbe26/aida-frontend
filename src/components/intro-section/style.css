@@ -159,11 +159,16 @@ z-index: 4;
     color:var(--white-color);
     text-align: center;
 }
+.box-card-image {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+}
 
 .pos-under-text{
     position: absolute;
     bottom: 45%;
-    right: 0%;
+    right: 10px;
 }
 
 .sec-text{
