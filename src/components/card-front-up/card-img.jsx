@@ -51,7 +51,7 @@ const CardFinal = () =>{
                                 <img src="/images/twitter.svg" alt="twitter" />
                             </div>
                             <div className="">
-                                <img src="/images/envelope.svg" alt="card" />
+                                <img src="/images/envelope.svg" alt="cardd"  />
                             </div>
                         </div>
                      </div>
