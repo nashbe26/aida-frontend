@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import './style.css'
 const CardFinal = () =>{
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 992px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1320px)' })
+    const videoRef = useRef(null);
 
+    useEffect(() => {
+      if (videoRef.current) {
+        videoRef.current.volume = 1; // Set the initial volume to 1 (unmuted)
+        videoRef.current.play(); // Start playing the video
+      }
+    }, []);
     return(
         <div className="container-box-footer">
             <div className="pos-footer-img">
@@ -29,14 +36,14 @@ const CardFinal = () =>{
             </div>  
             <div className="d-flex justify-content-center">
                 <div className="box-img-video my-5">
-                    <video src="/images/moodar.mp4" controls={true} className="video-player"></video>
+                    <video src="/images/moodar.mp4" autoPlay loop controls muted ref={videoRef} className="video-player"></video>
                 </div>
             </div>  
             <div className="d-flex justify-content-center my-5">
                  <div className="card-users">
                         <div className="mt-5 mb-4 d-flex">
                             <img src="/images/left.svg" alt="right" className="rg-image"/>
-                            <button className="trapezoid">REQUEST EARLY ACCESS</button>
+                            <a href="https://airtable.com/shrgoWKx1SF9irIZy" target={'_blank'} className="trapezoid">REQUEST EARLY ACCESS</a>
                             <img src="/images/right.svg" alt="right" className="left-image"/>
                         </div>
                         <div className="d-flex justify-content-around px-4" style={{width:"100%"}}>

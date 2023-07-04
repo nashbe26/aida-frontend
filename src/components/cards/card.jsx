@@ -34,13 +34,14 @@ return(
             {
             TEXT.map((x,index)=>{
                 return(
-                     <div className="col-12 col-md-6 col-lg-3">
+                     <div className="col-12 col-md-6 col-xl-3">
                                 <div
           className={`box ${hoveredBoxIndex === index ? 'hovered' : ''}`}
           key={index}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
+            
                <div className="card-text">
                     {index == 3 && (
                         <div className="pos-image-main-box-gra">
@@ -53,7 +54,12 @@ return(
                         </div>
                     )}
                         <div className="pos-image-main-box">
-                            <img src={"/images/base0"+(3-index)+".svg"} alt="one" />
+                            {hoveredBoxIndex === index ?                             <img src={"/images/base0"+(3-index)+"h.svg"} alt="one" />
+:
+<img src={"/images/base0"+(3-index)+".svg"} alt="one" />
+
+  
+                        }
                         </div>
                         <div className="box-desc-card">
                             <div className="bg-hover">
@@ -78,18 +84,7 @@ return(
                           
                         </div>
                      
-                        {hoveredBoxIndex === index && (
-                            <>
-                                <div className="box-triangle-pos"></div>
-                                <div className="pv-skull-hover">
-                                    <img
-                                        className="box-image"
-                                        src={"/images/hover.png"}
-                                        alt={`${x.text} Image`}
-                                    />
-                                </div>
-                            </>
-                        )}
+                
                     </div>
                 </div>
                  

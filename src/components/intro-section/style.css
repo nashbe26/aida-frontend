@@ -4,6 +4,7 @@
     font-weight: 600;
     line-height: 72px;
     color:var(--white-color);
+    position: relative;
     text-align: center;
 }
 .container-box-intro {
@@ -59,6 +60,7 @@
     min-height: 480px;
     width: 100%;
     border-radius:  12px 12px;
+    background-color: #000;
   }
   .box-under-w-one{
     position: absolute;
@@ -71,11 +73,12 @@ z-index: 6;
     height: 24px;
     width: 85%;
   }
-  .pos-under-text{
+  .pos-under-text {
     position: absolute;
-    bottom: 33%;
-    right: 10%;
-  }
+    bottom: -40px;
+    right: 20%;
+}
+
   .box-under-w-three{
     background: #000;
 filter: blur(29px);
@@ -138,7 +141,8 @@ z-index: 4;
     background:  #FFF;
     border: none;
     outline: none;
-
+    color: #000;
+    text-decoration: none!important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,10 +169,10 @@ z-index: 4;
     width: 100%;
 }
 
-.pos-under-text{
+.pos-under-text {
     position: absolute;
-    bottom: 45%;
-    right: 10px;
+    bottom: -25px;
+    right: 10%;
 }
 
 .sec-text{
@@ -200,30 +204,55 @@ z-index: 4;
     font-size: 44px;
     font-family: Sora;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 56px;
     color:var(--white-color);
     text-align: center;
 }
+.pos-under-text {
+    position: absolute;
+    bottom: -30px;
+    right: 20%;
+}
 
+.box-card-image{
+    position: absolute;
+    top:-1%;
+    width: 100%;
+}
 .sec-text{
     font-size: 20px;
     font-family: Sora;
-    line-height: 32px;
+    line-height: 28px;
     color:var(--grey-color);
     text-align: center;
+}
+.box-text-title{
+    width: 85%;
 }
   }
 
 @media (min-width: 1025px)and (max-width: 1550px)  {
 .main-text{
-    font-size: 56px;
+    font-size: 52px;
     font-family: Sora;
     font-weight: 600;
     line-height: 58px;
     color:var(--white-color);
     text-align: center;
 }
+.pos-desc-items {
+    position: absolute;
+    bottom: 20%;
+    z-index: 20;
+    right: 0;
+    width: 95%;
+}
 
+.box-card-image{
+    position: absolute;
+    top:-1%;
+    width: 100%;
+}
 .sec-text{
     font-size: 20px;
     font-family: Sora;
@@ -231,6 +260,9 @@ z-index: 4;
     color:var(--grey-color);
     text-align: center;
     padding: 0 1rem;
+}
+.box-text-title{
+    width: 80%;
 }
   }
 
@@ -252,9 +284,5 @@ z-index: 4;
     color:var(--grey-color);
     text-align: center;
 }
-.pos-under-text {
-    position: absolute;
-    bottom: 30%;
-    right: 18%;
-}
+
 }

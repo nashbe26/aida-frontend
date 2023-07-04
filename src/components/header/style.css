@@ -1,4 +1,8 @@
 .header-box{
     height: 30vh;
     padding-bottom:2.5rem ;
+    
+}
+.margin-left-header{
+    margin-left: 8%;
 }
